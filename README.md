@@ -10,8 +10,6 @@ Otherwise, feel free to make the configuration changes necessary to develop on y
 
 ## Prior Reading
 
----
-
 This README won't be covering any instructions regarding developing a GDNative C++ library itself, so I highly recommend checking out the following documentation:
 
 - [Godot Engine C++ Development](https://docs.godotengine.org/en/3.1/development/cpp/index.html)
@@ -19,16 +17,12 @@ This README won't be covering any instructions regarding developing a GDNative C
 
 ## Requirements
 
----
-
 - Python (3.5 or higher): [Installation](https://www.python.org/downloads/)
 - SCons (3.1.1 or higher): [Installation](https://pypi.org/project/SCons/) - [Docs](https://scons.org/documentation.html)
 - Visual Studio Code: [Installation](https://code.visualstudio.com/)
 - C/C++ VSCode Extension: [Installation](https://code.visualstudio.com/docs/languages/cpp)
 
 ## Generating Bindings
-
----
 
 - Clone the repository via `git clone https://github.com/Storm-Sphere-Studios/godot-gdnative-starter.git`
 - cd into `godot-cpp`
@@ -53,15 +47,11 @@ Take note of the `-j` option, you can specify the number of CPU threads to use t
 
 ## Setting up the VSCode Project
 
----
-
 With VSCode and the C/C++ Extension installed, open the repo directory in VSCode.
 
 Open `.vscode/c_cpp_properties.json`, and confirm that the `compilerPath` key points to your compiler executable, be sure to update it if not.
 
 ## Developing your GDNative Library
-
----
 
 All source files for your GDNative library are contained in `NativeLib/src` by default. It's important to keep all cpp source files within this folder structure, as the SCons build configuration depends on it. Otherwise, if you must make changes, be sure to update `SConstruct` to point to the new directory with your source files:
 
