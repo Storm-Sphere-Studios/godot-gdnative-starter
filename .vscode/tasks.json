@@ -1,0 +1,59 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Windows Debug (x64)",
+      "command": "scons",
+      "args": [
+        "target=debug",
+        "platform=windows"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "Windows Release (x64)",
+      "command": "scons",
+      "args": [
+        "target=release",
+        "platform=windows"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "MacOSX Debug (x64)",
+      "command": "scons",
+      "args": [
+        "target=debug",
+        "platform=osx"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "MacOSX Release (x64)",
+      "command": "scons",
+      "args": [
+        "target=release",
+        "platform=osx"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "Linux Debug (x64)",
+      "command": "scons",
+      "args": [
+        "target=debug",
+        "platform=linux"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "Linux Release (x64)",
+      "command": "scons",
+      "args": [
+        "target=release",
+        "platform=linux"
+      ]
+    }
+  ]
+}
