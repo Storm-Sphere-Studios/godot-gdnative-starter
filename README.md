@@ -25,6 +25,7 @@ This README won't be covering any instructions regarding developing a GDNative C
 ## Generating Bindings
 
 - Clone the repository via `git clone https://github.com/Storm-Sphere-Studios/godot-gdnative-starter.git`
+- Execute `git submodule update --init --recursive` to initialize the `godot-cpp` submodule
 - cd into `godot-cpp`
 - Refer to the instructions below to generate bindings for each platform and target
 
